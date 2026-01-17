@@ -1,17 +1,18 @@
-public class pattern{
+public class fullDiamond{
     public static void main(String args[]){
-        int n=5;
+        int n=2;
         int m=1;
         boolean k=false;
         for(int i=1;i<=n*2;i++){
-            for(int j=1;j<=m;j++){
+            for(int s=0;s<n-m;s++){
+                System.out.print(" ");
+            }
+            for(int j=1;j<=m*2;j++){
                 if((i+j)%2 ==0){
                     System.out.print("* ");
-                }
-                else{
-                    System.out.print(" ");
-                }
+                }   
             }
+            
             if(m==n){
                 k=true;
             }   
